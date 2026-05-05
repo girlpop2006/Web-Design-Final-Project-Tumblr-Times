@@ -1,0 +1,610 @@
+html {
+
+    font-family: "Comic Sans MS", "Arial";
+    background-color: #d4c2f2;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Comic Sans MS", "Arial";
+    background-color: #d4c2f2;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.homeImg {
+    display: block;
+    height: auto;
+    width: 55%;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: 9px;
+}
+
+.timeMacImg {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 2px;
+    padding-bottom: 6px;
+}
+
+
+.triviaImg {
+    display: block;
+    height: auto;
+    width: 60%;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: 3px;
+}
+
+.homeImg:hover {
+    border-bottom: 2px solid #2eb3b8;
+}
+
+.timeMacImg:hover {
+    border-bottom: 2px solid #2eb3b8;
+}
+
+.triviaImg:hover {
+    border-bottom: 2px solid #2eb3b8;
+}
+
+.navNarrow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 150%;
+}
+
+.navButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    width: 8vw;
+    height: 8vw;
+
+    border: 3px solid purple;
+    border-radius: 8px;
+    background: #C8F28A;
+    color: orange;
+
+    margin-left: 0px;
+    margin-right: 5px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+
+.navButton .material-symbols-outlined {
+    font-size: 5vw;
+}
+
+.navButton:hover {
+    background: #ADD474;
+}
+
+.nav {
+    padding: 10px;
+    display: none;
+}
+.nav img:hover{
+    height: auto;
+    border-bottom: 2px solid #2eb3b8;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    height: auto;
+    width: 65%;
+    margin-right: 0;
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    justify-content: center;
+}
+
+.hamburgMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header {
+    background-color: #b999f0;
+    display: flex;
+    flex-direction: row;
+}
+
+.source {
+    color: white;
+    font-style: italic;
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+section img {
+    height: auto;
+    width: 100%;
+
+    margin-top: 15px;
+
+    margin-bottom: 0px;
+    object-fit: cover;
+    padding-bottom: 0px;
+}
+
+section p {
+    min-width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: center;
+}
+
+section h2 {
+    text-align: center;
+}
+
+div img {
+    height: auto;
+    width: 100vw;
+
+    margin-bottom: 0px;
+    object-fit: cover;
+    padding-bottom: 0px;
+}
+
+div p {
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: center;
+}
+
+.Tumblrnotif {
+    background-color: #36465D;
+    color: white;
+    font-family: "Lucida Grande", "Helvetica Neue", Arial;
+    padding: 2px;
+
+}
+
+.fbNotif {
+    background-color: white;
+    color: #1877F2;
+    font-family: "Tahoma", "Lucida Grande", Arial;
+    padding: 2px;
+}
+
+.center {
+    text-align: center;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    border: 3px solid purple;
+    font-size: 18px;
+    text-align: center;
+
+    min-width: 250px;
+    width: 70%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 600px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction:row;
+    gap: 15px;
+}
+
+
+.buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    padding: 10px;
+
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+
+    border: 2px solid #b999f0;
+
+}
+
+.buttons :hover {
+    background-color: #b999f0;
+    border: 2px solid purple;
+}
+
+.triviaAnswer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.triviaAnswer button {
+    background-color: rgba(241, 97, 210, 0.833);
+    font-family: "Comic Sans MS";
+    color: white;
+    border: 2px solid purple;
+    padding: 10px;
+
+    width: 80%;
+    margin: 5px;
+}
+
+.triviaAnswer :hover {
+    background-color: rgb(255, 43, 43);
+    border: 2px solid white;
+}
+
+.correct:hover {
+    background-color: rgba(55, 197, 103, 0.766);
+    border: 2px solid purple;
+    cursor: pointer;
+}
+.italics {
+    font-style: italic;
+}
+
+.final {
+    margin-top: 400px;
+}
+
+.clock {
+    background-color: white;
+
+    border: 3px dashed purple;
+
+    font-family: "Courier New", monospace;
+    text-align: center;
+
+    width: 25%;
+    min-width: 50px;
+    padding: 5px;
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.introPic img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.introPic p {
+    width: 70%;
+}
+
+.triviaModal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0 auto;
+
+    background-color: #2eb3b8;
+    border: none;
+    box-shadow: 5px 5px 5px 3px purple;
+    cursor: pointer;
+}
+
+.triviaModal p {
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: left;
+}
+
+.triviaModal picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.triviaModal picture img {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+}
+
+.triviaModal2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0 auto;
+
+    background-color: #2eb3b8;
+    border: none;
+    box-shadow: 5px 5px 5px 3px purple;
+    z-index: 9999;
+}
+
+
+
+.closeButton {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid gray;
+
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+
+    background-color: red;
+    color: white;
+    box-shadow: 1px 2px 2px 1px gray;
+
+}
+
+.closeButton:hover {
+    background-color: rgb(255, 68, 68);
+    box-shadow: 1px 2px 2px 1px white;
+    border: 1px solid rgb(218, 218, 218);
+
+}
+
+.triviaModalButton2 {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+.bold {
+    font-weight: bold;
+    color: purple;
+}
+
+
+.footer {
+    background-color: #b999f0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    margin-top: 75px;
+
+}
+
+.footer a {
+    color: purple;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.accessibleHidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+@media (min-width: 700px){
+    html {
+        background-color: purple;
+    }
+
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    header {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .navNarrow {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .logo {
+        display: block;
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .homeImg {
+        display: block;
+        height: auto;
+        padding-bottom: 2.5px;
+        width: 78%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .timeMacImg {
+        display: block;
+        height: auto;
+        width: 90%;
+    }
+
+    .triviaImg {
+        display: block;
+        height: auto;
+        width: 82%;
+        padding-bottom: 2.5px;
+    }
+
+    .intro {
+        flex-direction: row;
+        gap: 0px;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        padding: 0px;
+    }
+
+    .intro p {
+        margin-left: 25px;
+    }
+
+    .introPic {
+        margin-left: 0px;
+        padding-left: 0px;
+        order: 2;
+        width: 70%;
+    }
+
+    .introPic img {
+        width: 50%;
+
+    }
+
+    div {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    div picture {
+        display: block;
+        margin: 0 auto;
+    }
+
+    div picture img {
+        width: 100%;
+    }
+
+    .timePic img {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .indieSlzImg {
+        display: block;
+        width: 45%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .indieSlzImg img {
+        width: 100%;
+    }
+
+    section img {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section p {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    section ul {
+        list-style: none;
+        align-content: center;
+        text-align: center;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .navButton {
+        display: none;
+    }
+
+    div img {
+        height: auto;
+        width: 100vw;
+
+        margin-bottom: 0px;
+        object-fit: cover;
+        padding-bottom: 0px;
+    }
+
+    div p {
+        padding-left: 20px;
+        padding-right: 20px;
+        align-content: center;
+    }
+
+    .triviaModal picture img {
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+}
+
+}
