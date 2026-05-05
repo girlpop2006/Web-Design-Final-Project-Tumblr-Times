@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Menu Icon Source: fonts.google.com/icons  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu">
+
+    <link rel="stylesheet" type="text/css" href="styles/site.css">
+    <title>Tumblr Times — Day in the Life</title>
+</head>
+
+<body>
+     <header>
+        <a href = "index.html">
+        <img src="images/tumblrTimesLogo.png" alt = "Tumblr Times Logo" class = "logo">
+        </a>
+
+        <div class = "navNarrow">
+            <button class = "navButton" id = "hamburgButton" aria-label = "show navigation">
+                <span class = "material-symbols-outlined"> menu </span>
+            </button>
+
+            <nav>
+                <ul class = "hamburgMenu accessibleHidden" id = "hamburgMenu">
+                    <li><a href="index.html">
+                        <img src = "images/home.png" alt = "Home Page" class = "homeImg">
+                    </a></li>
+                    <li><a href="time.html" >
+                        <img src = "images/timeMachine.png" alt = "Time Machine Page" class = "timeMacImg">
+                    </a></li>
+
+                    <li><a href="trivia.html">
+                        <img src = "images/trivia.png" alt = "Trivia Page" class = "triviaImg">
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav>
+            <ul class = "nav">
+                <li><a href="index.html">
+                    <img src = "images/home.png" alt = "Home Page" class = "homeImg">
+                </a></li>
+
+                <li><a href="time.html" >
+                    <img src = "images/timeMachine.png" alt = "Time Machine Page" class = "timeMacImg">
+                </a></li>
+
+                <li><a href="trivia.html">
+                    <img src = "images/trivia.png" alt = "Trivia Page" class = "triviaImg">
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2> Time Machine </h2>
+        <p class = "center" > Welcome to the Time Machine! Dial back the clock and spend a day in the 2011 Indie Sleaze aesthetic. </p>
+
+        <a class = "timePic" href = "indieSleaze.html">
+            <img src = "images/indieSleazeTM.png" alt = "Indie Sleaze">
+        </a>
+        <p class = "source"> Source: Rachel MacMillan </p>
+
+    </section>
+
+    <footer class = "footer">
+        <p> &copy; 2026 Tumblr Times</p>
+        <a href="references.html"> References</a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+</body>
+
+</html>

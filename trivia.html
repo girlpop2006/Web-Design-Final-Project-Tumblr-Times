@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Menu Icon & Close Icon Sources: fonts.google.com/icons  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+
+    <link rel="stylesheet" type="text/css" href="styles/site.css">
+    <title>Tumblr Times</title>
+</head>
+<body>
+    <header>
+        <a href = "index.html">
+        <img src="images/tumblrTimesLogo.png" alt = "Tumblr Times Logo" class = "logo">
+        </a>
+
+        <div class = "navNarrow">
+            <button class = "navButton" id = "hamburgButton" aria-label = "show navigation">
+                <span class = "material-symbols-outlined">menu</span>
+            </button>
+
+            <nav>
+                <ul class = "hamburgMenu accessibleHidden" id = "hamburgMenu">
+                    <li><a href="index.html">
+                        <img src = "images/home.png" alt = "Home Page" class = "homeImg">
+                    </a></li>
+                    <li><a href="time.html" >
+                        <img src = "images/timeMachine.png" alt = "Time Machine Page" class = "timeMacImg">
+                    </a></li>
+
+                    <li><a href="trivia.html">
+                        <img src = "images/trivia.png" alt = "Trivia Page" class = "triviaImg">
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav>
+            <ul class = "nav">
+                <li><a href="index.html">
+                    <img src = "images/home.png" alt = "Home Page" class = "homeImg">
+                </a></li>
+
+                <li><a href="time.html" >
+                    <img src = "images/timeMachine.png" alt = "Time Machine Page" class = "timeMacImg">
+                </a></li>
+
+                <li><a href="trivia.html">
+                    <img src = "images/trivia.png" alt = "Trivia Page" class = "triviaImg">
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 class = "center"> Trivia! </h2>
+    <p class = "center"> Test your knowlege of 2010's pop culture! Click your answer to see if it's correct! </p>
+    <br>
+    <ol>
+        <li> <p> Which artist is most associated with the soft grunge aesthetic? <p>
+        <div class = "triviaAnswer">
+            <button> Taylor Swift </button>
+            <button class = "correct" id = "c1" aria-label="Show explanation for why this answer is correct"> The Arctic Monkeys </button>
+            <button> Fall Out Boy </button>
+        </div>
+
+        <dialog id = "a1" class = "triviaModal hidden">
+            <button id = "x1" class = "closeButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <p> <span class = "bold" > The Arctic Monkeys</span>, specifically, their album "AM" is most associated with the soft grunge aesthetic. The album cover's iconic waveform flooded Tumblr feeds, paired with reblogs of lyrics from popular songs "Do I Wanna Know?" and "R U Mine?". The Arctic Monkeys offered soft grunge teens an aspiration of a dark fantasy adulthood. </p>
+            <picture>
+                <img src = "images/AM.jpg" alt = "AM">
+            </picture>
+            <p class = "source"> Source: www.behindthecovers.com </p>
+        </dialog>
+        </li>
+
+
+        <li> <p> Which clothing item, worn regardless of weather, was a signature staple of the Twee aesthetic? <p>
+        <div class = "triviaAnswer">
+            <button class = "correct" id = "c2" aria-label="Show explanation for why this answer is correct"> Tights </button>
+            <button> Scarves </button>
+            <button> Hats </button>
+        </div>
+
+
+        <dialog id = "a2" class = "triviaModal hidden">
+            <button id = "x2" class = "closeButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <p> Fun and colorful <span class = "bold" > Tights </span> are worn regarless of weather! </p>
+
+            <picture>
+                <img src = "images/triviaTwee1.jpg" alt = "">
+            </picture>
+            <p class = "source"> Source: www.pinterest.com/marietie </p>
+
+        </dialog>
+        </li>
+
+        <li> <p> Which water bottle became the most iconic accessory of the VSCO girl aesthetic? </p>
+        <div class = "triviaAnswer">
+            <button class = "correct" id = "c3" aria-label="Show explanation for why this answer is correct"> HydroFlask </button>
+            <button> Nalgene </button>
+            <button> Camleback </button>
+        </div>
+
+        <dialog id = "a3" class = "triviaModal hidden">
+            <button id = "x3" class = "closeButton" >
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <p> The <span class = "bold" > Hydro Flask </span> was glued to every VSCO girl in 2019. It was often decorated with trendy stickers and a DIY hand-braided string keychain. </p>
+            <picture>
+                <img src = "images/triviaVSCO.jpg" alt = " ">
+            </picture>
+            <p class = "source"> Source: www.pinterest.com/melinaifti</p>
+        </dialog>
+        </li>
+
+        <li> <p> Which short-form video platform was popular in the early 2010's before shutting down in 2016? </p>
+        <div class = "triviaAnswer">
+            <button> Musically </button>
+            <button> YikYak </button>
+            <button class = "correct" id = "c4" aria-label="Show explanation for why this answer is correct"> Vine </button>
+        </div>
+
+        <dialog id = "a4" class = "triviaModal hidden">
+            <button id = "x4" class = "closeButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+
+              <p> <span class = "bold" > Vine </span> was the most popular video-based app. It's signature feature was it's six-second limit on videos which pushed users to be fast, funny, and innovative. The platform became a central hub for meme culture, and many iconic Vines stayed relevant long after the app shut down in 2016. </p>
+            <div class = "triviaModalPicture2">
+
+                <picture>
+                    <img src = "images/triviaVine2.png" alt = "">
+                </picture>
+                <p class = "source"> Source: www.youtube.com/warenya </p>
+            </div>
+        </dialog>
+        </li>
+
+        <li> <p> Lorde was only how old when "Royals" topped the charts in 2013? </p>
+        <div class = "triviaAnswer">
+            <button> 18 </button>
+            <button class = "correct" id = "c5" aria-label="Show explanation for why this answer is correct"> 16 </button>
+            <button> 17 </button>
+        </div>
+
+
+        <dialog id = "a5" class = "triviaModal hidden">
+            <button id = "x5" class = "closeButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <p> Lorde was only <span class = "bold" > 16 </span> when she released her debut album "Pure Heorine" in 2013. Her song "Royals" spent nine weeks as the top song on the Billboard Top 100. The song won Lorde a Grammy the following year for Best Pop Solo Performance. </p>
+            <picture>
+                <img src = "images/triviaLorde.jpg" alt = " ">
+            </picture>
+            <p class = "source"> Source: www.metro.co.uk</p>
+        </dialog>
+        </li>
+        <li> <p> Carly Rae Jepsen's "Call Me Maybe" was popularized after being tweeted by which celebrity? </p>
+        <div class = "triviaAnswer">
+            <button class = "correct" id = "c6" aria-label="Show explanation for why this answer is correct"> Justin Beiber </button>
+            <button> Bruno Mars </button>
+            <button> Harry Styles </button>
+        </div>
+
+
+        <dialog id = "a6" class = "triviaModal hidden">
+            <button id = "x6" class = "closeButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <p> <span class = "bold" > Justin Beiber </span> popularized "Call Me Maybe" through a tweet in December 2011. </p>
+            <picture>
+                <img src = "images/triviaTweet.jpg" alt = " ">
+            </picture>
+            <p class = "source"> Source: www.mrwillw.blogpost.com </p>
+        </dialog>
+        </li>
+
+        <li> <p> Which show featured a high school teacher named Schmidt and his unlikely roommates?</p>
+        <div class = "triviaAnswer">
+            <button> The Fosters </button>
+            <button class = "correct" id = "c7" aria-label="Show explanation for why this answer is correct"> New Girl </button>
+            <button> Pretty Little Liars </button>
+        </div>
+
+        <dialog id = "a7" class = "triviaModal hidden">
+            <button id = "x7" class = "closeButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <p>In<span class = "bold" > New Girl</span>, Schmidt is a close friend and roomate of the main protaganist Jess. </p>
+            <picture>
+                <img src = "images/triviaNewGirl.jpg" alt = " ">
+            </picture>
+            <p class = "source"> Source: www.ew.com </p>
+        </dialog>
+        </li>
+
+        <li> <p> Which 2011 film starred Ryan Gosling as a stunt driver who moonlights as a getaway driver? </p>
+        <div class = "triviaAnswer">
+            <button class = "correct" id = "c8" aria-label="Show explanation for why this answer is correct"> Drive </button>
+            <button> The Place Beyond the Pines </button>
+            <button> Gangster Squad </button>
+        </div>
+
+        <dialog id = "a8" class = "triviaModal hidden">
+            <button id = "x8" class = "closeButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <p> Ryan Gosling portrays an unnamed getaway driver in the film <span class = "bold" >Drive</span>. It was considered the best film of 2011 by several critics and was awarded the Best Director Award that same year.</p>
+            <picture>
+                <img src = "images/triviaDrive.jpg" alt = " ">
+            </picture>
+            <p class = "source"> Source: www.wikipedia.org/wiki/Drive </p>
+        </dialog>
+        </li>
+
+        <li> <p> What flavor of frappuccino, released in 2017, caused widespread controversy for its taste? </p>
+        <div class = "triviaAnswer">
+            <button> Cotton Candy </button>
+            <button> Cake Batter </button>
+            <button class = "correct" id = "c9" aria-label="Show explanation for why this answer is correct"> Unicorn </button>
+        </div>
+
+        <dialog id = "a9" class = "triviaModal hidden">
+            <button id = "x9" class = "closeButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <p> Starbucks released the limited-time <span class = "bold" >Unicorn Frappuccino</span> for one week in April 2017. The drink was highly controversial, with Katy Perry posting a video on her Instagram story of her trying it and spitting in out. Nonetheless, the drink's aesthetic visuals and limited-time availibility created so much demand for this drink that it went down in Starbucks history. In April 2025, Starbucks re-released the Unicorn Frappuccino exclusively for Coachella.</p>
+            <picture>
+                <img src = "images/UnicornFrap.png" alt = " ">
+            </picture>
+            <p class = "source"> Source: www.mashed.com </p>
+        </dialog>
+        </li>
+
+        <li> <p> What TV show is associated with the Soft Grunge aesthetic? </p>
+        <div class = "triviaAnswer">
+            <button> Skins </button>
+            <button class = "correct" id = "c10" aria-label="Show explanation for why this answer is correct"> American Horror Story </button>
+            <button> Black Mirror </button>
+        </div>
+
+        <dialog id = "a10" class = "triviaModal hidden">
+            <button id = "x10" class = "closeButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <p> <span class = "bold" >American Horror Story</span> is strongly associated with the soft grunge aesthetic. Season 1, <em> Murder House</em>, became especially iconic on Tumblr, where the dark romance between characters Violet Harmon and Tate Langdon dominated reblogs and inspired the aesthetic. </p>
+            <picture>
+                <img src = "images/triviaAHS.png" alt = " ">
+            </picture>
+            <p class = "source"> Source: www.tumblr.com/tates-getaway</p>
+        </dialog>
+        </li>
+
+        <li> <p> What geographic surfer culture inspired the VSCO aesthetic? </p>
+        <div class = "triviaAnswer">
+            <button> OBX </button>
+            <button class = "correct" id = "c11" aria-label="Show explanation for why this answer is correct"> West Coast </button>
+            <button> Hamptons </button>
+        </div>
+
+        <dialog id = "a11" class = "triviaModal hidden">
+            <button id = "x11" class = "closeButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <p> <span class = "bold" >West Coast</span> surfer culture shaped the VSCO aesthetic by romanticizing California’s year‑round warmth and “endless summer” lifestyle. The look borrowed heavily from the sun‑soaked, carefree energy of coastal surfers and translated it into a digital, teen‑friendly aesthetic. </p>
+            <picture>
+                <img src = "images/triviaVSCO1.jpg" alt = " ">
+            </picture>
+            <p class = "source"> Source: www.pinterest.com/heymarthae</p>
+        </dialog>
+        </li>
+
+        <li> <p> Pastel Twee's color palette featured what motif as a popular pattern? </p>
+        <div class = "triviaAnswer">
+            <button class = "correct" id = "c12" aria-label= "Show explanation for why this answer is correct"> Desserts </button>
+            <button> Peace Symbols </button>
+            <button> Chevron </button>
+        </div>
+
+        <dialog id = "a12" class = "triviaModal hidden">
+            <button id = "x12" class = "closeButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <p> <span class = "bold" >Dessert</span> patterns are popular within the Pastel Twee aesthetic. Here's Ariana Grande wearing a 1950's inspired satin dress with a cupcake pattern. </p>
+            <picture>
+                <img src = "images/triviaPastelTwee1.jpg" alt = " ">
+            </picture>
+            <p class = "source"> Source: www.pinterest.com/findail</p>
+        </dialog>
+        </li>
+
+        <li> <p> The Soft Grunge color palette was primarily black and white accented with what? </p>
+        <div class = "triviaAnswer">
+            <button> Neon </button>
+            <button> Plaid </button>
+            <button class = "correct" id = "c13" aria-label="Show explanation for why this answer is correct"> Denim </button>
+        </div>
+
+        <dialog id = "a13" class = "triviaModal hidden">
+            <button id = "x13" class = "closeButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <p> Soft Grunge's black and white style is generally accented <span class = "bold" >Denim</span> or flannel. </p>
+            <picture>
+                <img src = "images/triviaDenim.jpg" alt = " ">
+            </picture>
+            <p class = "source"> Source: www.pinterest.com/alivia_predovic874/</p>
+        </dialog>
+        </li>
+
+        <li> <p> What product launch officially cemented the King Kylie aesthetic as a cultural moment? </p>
+        <div class = "triviaAnswer">
+            <button> Kylie Skims  </button>
+            <button class = "correct" id = "c14" aria-label="Show explanation for why this answer is correct"> Kylie Lip Kit </button>
+            <button> Kylie Baby </button>
+        </div>
+
+        <dialog id = "a14" class = "triviaModal hidden">
+            <button id = "x14" class = "closeButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <p> Kylie Jenner launched her <span class = "bold" >Kylie Lip Kit</span> in November 2016, which became central to her internet image as "King Kylie." </p>
+            <picture>
+                <img src = "images/triviaKingKyli.png" alt = " ">
+            </picture>
+            <p class = "source"> Source: www.instagram.com/kyliejenner
+            </p>
+        </dialog>
+        </li>
+
+        <li> <p> VSCO mood boards typically centered around what visual? </p>
+        <div class = "triviaAnswer">
+            <button class = "correct" id = "c15" aria-label="Show explanation for why this answer is correct"> Beach Sunsets </button>
+            <button> Bath Bombed Tubs </button>
+            <button> Urban Alleys </button>
+        </div>
+
+        <dialog id = "a15" class = "triviaModal hidden">
+            <button id = "x15" class = "closeButton">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <p> Almost every VSCO mood board has a <span class = "bold" >Beach Sunset</span> somewhere in the collage.</p>
+            <picture>
+                <img src = "images/triviaVSCO3.png" alt = " ">
+            </picture>
+            <p class = "source"> Source: www.pinterest.com</p>
+        </dialog>
+        </li>
+    </ol>
+
+    <footer class = "footer">
+    <p> &copy; 2026 Tumblr Times</p>
+    <a href="references.html"> References</a>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="scripts/hamburgerMenu.js"></script>
+<script src="scripts/triviaModal.js"></script>
+</body>
+
+</html>
